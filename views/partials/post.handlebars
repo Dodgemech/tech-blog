@@ -1,7 +1,8 @@
+{{!-- partial for post information --}}
 <article class="post">
-   <div>
+  <div class="title">
       <h3>{{title}}</h3>
-      <h6>Posted by {{user.username}} on {{format_date created_at}}</h6>
-      <h5>{{body}}</h5>
+      <h5>Posted by {{user.username}} on {{created_at}}</h5>
+      <a href="/post/{{id}}">View Post</a>
    </div>
 </article>

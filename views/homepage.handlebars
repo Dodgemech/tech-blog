@@ -1,12 +1,7 @@
-<div class="post-previews">
+<ol>
     {{#each posts as |post|}}
-    <article class="post">
-        <div>
-            <h3>{{title}}</h3>
-            <h5>Posted by {{user.username}} on {{format_date created_at}}</h5>
-            {{!-- takes user to single post --}}
-            <a href="/post/{{id}}">View Post</a>
-        </div>
-    </article>
+    <li>
+        {{> post post}}
+    </li>
     {{/each}}
-</div>
+</ol>

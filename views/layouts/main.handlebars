@@ -1,3 +1,4 @@
+{{!-- main layout goes here --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,14 +13,15 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>Tech Blog</h1>
-      <a href="/">Home</a>
-      <a href="/dashboard">Dashboard</a>
+      <h1>
+        <a href="/">Tech Blog</a>
+      </h1>
       <nav>
         {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">Logout</button>
+        <a href="/dashboard">dashboard</a>
+        <button id="logout" class="btn-no-style">logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login">login</a>
         {{/if}}
       </nav>
     </header>
@@ -28,7 +30,7 @@
       {{{ body }}}
     </main>
     <footer>
-      &copy 2022 Travis Geers
+      Thanks for visiting!
     </footer>
   </div>
 
